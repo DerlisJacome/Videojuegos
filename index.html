@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zona Gamer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+      color: white;
+    }
+
+    header {
+      background-color: #141414;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    marquee {
+      background-color: #00ffff;
+      color: #000;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    .videos iframe,
+    .juegos iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 350px;
+      border: none;
+      border-radius: 10px;
+      margin: 1em 0;
+    }
+
+    table {
+      width: 100%;
+      max-width: 600px;
+      margin: 1em auto;
+      border-collapse: collapse;
+      background-color: #333;
+      color: white;
+    }
+
+    table, th, td {
+      border: 1px solid #555;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    form {
+      background-color: #1c1c3c;
+      padding: 20px;
+      max-width: 600px;
+      margin: 2em auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #00ffff;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #00caca;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #111;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎮 Zona Gamer</h1>
+    <p>¡Tu portal favorito de juegos y diversión!</p>
+  </header>
+
+  <nav>
+    <a href="#videos">Videos</a>
+    <a href="#juegos">Juegos</a>
+    <a href="#ranking">Ranking</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <marquee behavior="scroll" direction="left">¡Bienvenido a Zona Gamer! Mira los videos, juega y deja tu mensaje 😎🎯</marquee>
+
+  <section id="videos" class="videos">
+    <h2>🎥 Videos Recomendados</h2>
+    <iframe src="https://www.youtube.com/embed/Vsb8lSYC9WE?si=mOUY8yQHpVeN9yNp" allowfullscreen></iframe>
+  </section>
+
+  <section id="juegos" class="juegos">
+    <h2>🕹️ Juegos Incrustados</h2>
+    <iframe src="https://wordwall.net/es/embed/9c299678331d4af58ebb01b35960f785?themeId=44&templateId=73&fontStackId=0" allowfullscreen></iframe>
+  </section>
+
+  <section id="ranking">
+    <h2>🏆 Ranking de Jugadores</h2>
+    <table>
+      <tr>
+        <th>Jugador</th>
+        <th>Puntaje</th>
+        <th>País</th>
+      </tr>
+      <tr>
+        <td>JuanGamer</td>
+        <td>9800</td>
+        <td>🇲🇽</td>
+      </tr>
+      <tr>
+        <td>LolaPro</td>
+        <td>9200</td>
+        <td>🇪🇸</td>
+      </tr>
+      <tr>
+        <td>XDPlayer</td>
+        <td>8800</td>
+        <td>🇦🇷</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="contacto">
+    <h2>📬 Contáctanos</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Zona Gamer. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
